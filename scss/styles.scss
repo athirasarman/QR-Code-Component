@@ -1,0 +1,47 @@
+@import "./variables.scss";
+
+body {
+    background-color: $lightgray;
+    font-family: $fontfamily;
+}
+
+.content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.card {
+    background-color: $white;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 320px;
+    border-radius: 8px;
+
+    img {
+        border-radius: 8px;
+        margin: 12px;
+        width: -webkit-fill-available;
+    }
+
+    .text {
+        justify-content: center;
+        text-align: center;
+        font-size: $fontsize;
+        margin: 2em 2em 2em 0;
+
+        .header-text {
+            font-weight: $boldfontweight;
+            color: $darkblue;
+            font-size: 20px;
+            margin: 1em 2em;
+        }
+
+        .content-text {
+            font-weight: $lightfontweight;
+            color: $lightgray;
+            margin: 1em 2em;
+        }
+    }
+}
